@@ -71,3 +71,8 @@ config.yaml
 .c
 .cpp
 .pyd
+
+# 忽略 .ok 相关文件
+*.ok
+*.ok_history
+*.ok_messages
