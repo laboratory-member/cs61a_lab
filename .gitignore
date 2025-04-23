@@ -76,3 +76,6 @@ config.yaml
 *.ok
 *.ok_history
 *.ok_messages
+.ok_storage.dir
+.ok_storage.dat
+.ok_storage.bak
