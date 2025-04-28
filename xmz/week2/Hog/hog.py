@@ -205,6 +205,10 @@ def always_roll(n):
     # BEGIN PROBLEM 6
     "*** YOUR CODE HERE ***"
     # END PROBLEM 6
+    def strategy(score, opponent_score):
+        return n
+
+    return strategy
 
 
 def catch_up(score, opponent_score):
@@ -237,7 +241,12 @@ def is_always_roll(strategy, goal=GOAL):
     # BEGIN PROBLEM 7
     "*** YOUR CODE HERE ***"
     # END PROBLEM 7
-
+    first_roll = strategy(0, 0)
+    for score in range(goal):
+        for opponent_score in range(goal):
+            if strategy(score, opponent_score) != first_roll:
+                return False
+    return True
 
 def make_averaged(original_function, times_called=1000):
     """Return a function that returns the average value of ORIGINAL_FUNCTION
@@ -254,6 +263,12 @@ def make_averaged(original_function, times_called=1000):
     # BEGIN PROBLEM 8
     "*** YOUR CODE HERE ***"
     # END PROBLEM 8
+    def averaged_function(*args):
+        total = 0
+        for _ in range(times_called):
+            total += original_function(*args)
+        return total / times_called
+    return averaged_function
 
 
 def max_scoring_num_rolls(dice=six_sided, times_called=1000):
@@ -267,6 +282,17 @@ def max_scoring_num_rolls(dice=six_sided, times_called=1000):
     # BEGIN PROBLEM 9
     "*** YOUR CODE HERE ***"
     # END PROBLEM 9
+    best_num_rolls = 0
+    best_average_score = 0
+    averaged_roll = make_averaged(roll_dice, times_called)
+
+    for num_rolls in range(1, 11):
+        average_score = averaged_roll(num_rolls, dice)
+        if average_score > best_average_score:
+            best_average_score = average_score
+            best_num_rolls = num_rolls
+
+    return best_num_rolls
 
 
 def winner(strategy0, strategy1):
