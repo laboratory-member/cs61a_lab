@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.2.19)  25 APR 2025 16:54
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.2.19)  7 MAY 2025 23:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -463,8 +463,7 @@ File: l3backend-xetex.def 2024-05-08 L3 backend support: XeTeX
 \l__pdf_internal_box=\box59
 \g__pdf_backend_annotation_int=\count315
 \g__pdf_backend_link_int=\count316
-)
-No file main.aux.
+) (./main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 40.
@@ -487,6 +486,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 40.
 LaTeX Font Info:    ... okay on input line 40.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 40.
 LaTeX Font Info:    ... okay on input line 40.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
 *geometry* verbose mode - [ preamble ] result:
@@ -572,16 +572,13 @@ File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
 )
 Package backref Info: ** backref set up for natbib ** on input line 40.
 Package hyperref Info: Link coloring ON on input line 40.
+ (./main.out) (./main.out)
 \@outlinefile=\write3
 \openout3 = `main.out'.
 
-
-
-Package hyperref Warning: Rerun to get /PageLabels entry.
-
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-(c:/texlive/2024/texmf-dist/tex/latex/microtype/mt-cmr.cfg
+ (c:/texlive/2024/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
 )
 LaTeX Font Info:    Trying to load font information for U+msa on input line 42.
@@ -618,21 +615,14 @@ File: se-ascii-print.def 2019/11/29 v1.12 stringenc: Printable ASCII characters
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
-
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  EB235727CDB8457CCC4C80D80F678F73;92.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 06C6DB35C6943561190B08711EC08AB9;64.
  ) 
 Here is how much of TeX's memory you used:
- 18035 strings out of 473840
- 297332 string characters out of 5733401
- 741620 words of memory out of 5000000
- 40867 multiletter control sequences out of 15000+600000
+ 18044 strings out of 473840
+ 297430 string characters out of 5733401
+ 740620 words of memory out of 5000000
+ 40870 multiletter control sequences out of 15000+600000
  573451 words of font info for 57 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  92i,9n,96p,997b,405s stack positions out of 10000i,1000n,20000p,200000b,200000s
