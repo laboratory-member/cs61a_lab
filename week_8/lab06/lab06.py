@@ -7,6 +7,7 @@ class Transaction:
     def changed(self):
         """Return whether the transaction resulted in a changed balance."""
         "*** YOUR CODE HERE ***"
+        return self.before != self.after
 
     def report(self):
         """Return a string describing the transaction.
@@ -21,6 +22,11 @@ class Transaction:
         msg = 'no change'
         if self.changed():
             "*** YOUR CODE HERE ***"
+            if self.after < self.before:
+                verb = 'decreased'
+            else:
+                verb = 'increased'
+            msg = verb + ' ' + str(self.before) + '->' + str(self.after)
         return str(self.id) + ': ' + msg
 
 class BankAccount:
@@ -138,14 +144,14 @@ class Server:
         """Append the email to the inbox of the client it is addressed to.
             email is an instance of the Email class.
         """
-        ____.inbox.append(email)
+        self.clients[email.recipient_name].inbox.append(email)
 
     def register_client(self, client):
         """Add a client to the clients mapping (which is a 
         dictionary from client names to client instances).
             client is an instance of the Client class.
         """
-        ____[____] = ____
+        self.clients[client.name] = client
 
 class Client:
     """A client has a server, a name (str), and an inbox (list).
